@@ -88,7 +88,7 @@ void histogram() {
       if (points[avg] == null) {
         points[avg] = new ArrayList();
       }
-      points[avg].add(new Point(i, j, avg));
+      points[avg].add(new Point(i+250, j, avg));
     }
   }
   histMax = max(hist);
@@ -98,7 +98,7 @@ void histogram() {
     analisis.line(auxX, 270, auxX, 270-auxY);
   }
   
-  histInteractive(points, hist);
+  histInteractive(points);
 }
 
 boolean overHist() {
@@ -113,7 +113,7 @@ boolean overHist() {
   }
 }
 
-void histInteractive(ArrayList<Point>[] points, int[] hist) {
+void histInteractive(ArrayList<Point>[] points) {
   PImage aux;
   int auxX;
   if (overHist()) {
@@ -124,7 +124,6 @@ void histInteractive(ArrayList<Point>[] points, int[] hist) {
       if(points[auxX] != null) {
         for(Point p : points[auxX]) {
           analisis.set(p.x, p.y, color(p.c));
-          System.out.println(hist[auxX]);
         }
       }
     }
