@@ -22,13 +22,12 @@ Complete la tabla:
 
 | Integrante | github nick |
 |------------|-------------|
-|            |             |
+| Raúl Coral | Darkwilde95 |
 
 ## Discusión
 
-(describa brevemente las actividades realizadas y los resultados obtenidos)
+Se realizó la transformación de la imagen a escala de grises mediante el promedio del valor de cada canal RGB
+Se realizó la implementación de la masacara de convolución entre los que esta la masacara de Blur, la mascara de Afilado y la mascara
+para la detección de bordes.
+Se realizo la implementación de la segmentación de la imagen en escala de grises mediante interacción del mouse con el histograma.
 
-## Entrega
-
-* Hacer [fork](https://help.github.com/articles/fork-a-repo/) de la plantilla. Plazo: 28/4/19 a las 24h.
-* (todos los integrantes) Presentar el trabajo presencialmente en la siguiente sesión de taller.
